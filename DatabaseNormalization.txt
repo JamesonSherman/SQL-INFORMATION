@@ -1,0 +1,28 @@
+Database Normalization:
+Database Normalization is the idea of reducing database redundancy 
+and allowing for cleaner and more optimized flow of data via tables.
+To reduce larger tables and redundant values being stored we are able to break our tables
+into more efficient and clean sub tables that can be used just as well with less
+overlap of data and with higher precision of concise values.
+
+
+First Normal Form
+Rules:
+1. Each column should Be Atomic - one value per cell
+2. Can not have similar columns with similar information
+3. There should be a key.
+
+key rules: split large tables into smaller tables with
+relevant keys.
+
+
+Second Normal Form
+1. Adhere to all rules of first normal form
+2. All non key columns should be dependent on primary key
+
+TIP: You can use a Join table as an intersection table for multiple ID keys
+
+Third Normal Form:
+1. Adhere to all rules of First and Second Normal Form
+2. All non key columns should be "non transitively" dependent on primary key
+
